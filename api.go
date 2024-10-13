@@ -75,7 +75,7 @@ func (m *MMS) WallLeft() bool {
 }
 
 func (m *MMS) MoveForward(steps int) bool {
-	return m.ackCmd(fmt.Sprintf("moveForward"))
+	return m.ackCmd(fmt.Sprintf("moveForward %d", steps))
 }
 
 func (m *MMS) MoveForwardHalf(steps int) bool {
